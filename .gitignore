@@ -87,3 +87,41 @@ node_modules
 .env
 
 /generated/prisma
+
+# Security-sensitive files (never commit secrets/keys)
+.env.*
+!.env.example
+!.env.template
+
+# Private keys & certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.csr
+*.jks
+*.keystore
+
+# SSH/GPG credentials and local cloud configs
+*.asc
+*.gpg
+*.kube/config
+.aws/credentials
+.azure/
+
+# Local secret/config artifacts
+secrets.*
+*.secret
+*.secrets
+*credentials*.json
+service-account*.json
+
+# Database files/backups and dumps
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.dump
